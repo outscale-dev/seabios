@@ -41,9 +41,10 @@
 #define CMOS_BIOS_BOOTFLAG1      0x38
 #define CMOS_BIOS_DISKTRANSFLAG  0x39
 #define CMOS_BIOS_BOOTFLAG2      0x3d
-#define CMOS_MEM_HIGHMEM_LOW     0x5b
-#define CMOS_MEM_HIGHMEM_MID     0x5c
-#define CMOS_MEM_HIGHMEM_HIGH    0x5d
+#define CMOS_MEM_HIGHMEM_16      0x5b
+#define CMOS_MEM_HIGHMEM_24      0x5c
+#define CMOS_MEM_HIGHMEM_32      0x5d
+#define CMOS_MEM_HIGHMEM_40      0x5e
 #define CMOS_BIOS_SMP_COUNT      0x5f
 
 // RTC register flags

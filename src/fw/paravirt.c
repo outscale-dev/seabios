@@ -397,9 +397,10 @@ qemu_cfg_e820(void)
     }
 
     // Check for memory over 4Gig in cmos
-    u64 high = ((rtc_read(CMOS_MEM_HIGHMEM_LOW) << 16)
-                | ((u32)rtc_read(CMOS_MEM_HIGHMEM_MID) << 24)
-                | ((u64)rtc_read(CMOS_MEM_HIGHMEM_HIGH) << 32));
+    u64 high = ((rtc_read(CMOS_MEM_HIGHMEM_16) << 16)
+                | ((u32)rtc_read(CMOS_MEM_HIGHMEM_24) << 24)
+                | ((u64)rtc_read(CMOS_MEM_HIGHMEM_32) << 32)
+                | ((u64)rtc_read(CMOS_MEM_HIGHMEM_40) << 40));
     RamSizeOver4G = high;
     e820_add(0x100000000ull, high, E820_RAM);
     dprintf(1, "RamSizeOver4G: 0x%016llx [cmos]\n", RamSizeOver4G);
