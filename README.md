@@ -1,3 +1,7 @@
+This is an Outscale fork of SeaBIOS with few interesting branches and specific patches.
+
+[![Project Archived](https://docs.outscale.com/fr/userguide/_images/Project-Archived-red.svg)](https://docs.outscale.com/en/userguide/Open-Source-Projects.html)
+
 Welcome to the SeaBIOS project!  This project implements an X86 legacy
 bios that is built with standard GNU tools.
 
